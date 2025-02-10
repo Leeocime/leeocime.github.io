@@ -1,1 +1,219 @@
-hello
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <title>浙江大学(宁波分校)ZheJiang Uiversity of NingBo</title>
+    <meta charset="tuf-8">
+    <link rel="shortcut icon" href="./2.jpg">
+</head>
+
+<body>
+    <h1 align="center">my first html</h1>
+
+    <div id="nav">
+        <form align="center">
+            用户名：<input type="text">
+            密码：<input type="password">
+            <input  type="submit" value="登录">
+            <input onclick="clik()" type="submit" value="请点这里"> 
+            <button id="1234">提交你的老婆</button>
+        </form>
+    </div>
+
+
+    <header>
+
+    </header>
+    <nav></nav>
+    <article>
+        <section></section>
+    </article>
+    <aside></aside>
+    <footer></footer>
+
+    <h2>2</h2>
+    <h3>3</h3>
+    <h4>4</h4>
+    <h5>5</h5>
+    <h6>6</h6>
+
+    <p>段落标签，我的天哪shit<br>shit</p>
+    <hr color="green" width="200px" size="9px" align="left">
+    <img src="1.jpg" alt="图片被狗吃了" width="300px" title="色鬼，你干嘛">
+    <img src="C:\Users\Leeoci\Pictures\Saved Pictures\106453141_p0_master1200.jpg" width="300px" alt="完了" title="我好看吗">
+    <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.XbrFEk7v9JL1S4xedwkaTAAAAA?w=161&h=349&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+        title="???">
+
+    <hr color="red" width="2000px" size="5px">
+    <p align="center">danger</p>
+    <hr color="red" width="2000px" size="5px">
+    <a href="https://www.bilibili.com/">
+        <p>nimashile</p> <img src="1.jpg" alt="shit" title="nimashile" width="300px">
+    </a>
+    <em>em你好</em>
+    <b>b你好</b>
+    <i>i你好</i>
+    <strong>strong你好</strong>
+    <del>del你好</del>
+    <span>span你好</span>
+
+    <ol type="c">
+        <li>king </li>
+        <li>queen <img src="C:\Users\Leeoci\Pictures\Saved Pictures\91130567_p0_master1200.jpg" alt="no queen"
+                title="what are you doing,man" width="20"></li>
+        <li>dock</li>
+        <li>
+            shit
+            <ol>
+                <li>1shit</li>
+                <li>2shit</li>
+            </ol>
+        </li>
+    </ol>
+
+    <ul type="none">
+        <li>shit</li>
+        <li>fuck</li>
+        <li>nima</li>
+        <li>
+            <ul type="square">
+                <li>dog</li>
+                <li>cat</li>
+                <li>cow</li>
+                <li><a href="">shit</a></li>
+            </ul>
+        </li>
+    </ul>
+
+    <table border="1" width="400px" height="400px">
+        <tr>
+            <td colspan="2">单元格</td>
+            <td>单元格</td>
+            <td rowspan="1">nima photo</td>
+        </tr>
+        <tr>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td><img src="1.jpg" alt="nima" width="120"></td>
+        </tr>
+        <tr>
+            <td>单元格</td>
+            <td>单元格</td>
+            <td>单元格</td>
+        </tr>
+    </table>
+
+
+
+    <script>
+        var divs=document.getElementsByTagName('title')[0];
+        divs.innerHTML='zhejiangdaxue';
+        document.write(divs);
+
+        //null 为对象为空
+        //undefined为数值为空
+        var tiem=new Date(1729779795511);
+        var hour=new Date().getHours();
+        document.write(typeof tiem+"<br>"+typeof hour+"<br>");
+        document.write(Date.now()+'<br>');
+        document.write(tiem);
+        document.write("<br>"+tiem.getDay()+"<br>");
+
+
+        function getradom(max, min) {
+
+            return Math.floor((max - min) * Math.random() + min);
+        }
+
+        document.write(getradom(1000000, 9999999));
+        function add(a, b) {
+            a += b;
+            return a;
+        }
+        var a = 99;
+        a = add(a, 2);
+        document.write("<br>" + a);
+
+
+        var n = 10;
+        var people = {
+            name: "leeoci",
+            age: 88,
+            dad: 'leeoci',
+            kingdom: 'leeoci\'s kingdom'
+
+
+        };
+        document.write(Array.isArray(n));
+
+        document.write("<br>" + people.kingdom);
+
+        var m = 10;
+        document.write(people.name + "<br>");
+        console.log(n == m);
+        console.log(typeof people);
+        if (m != 10)
+            document.write("卧槽尼玛");
+
+        var str = "nimalegebide\"nima\"\n"
+        var str2 = "nihaoya\
+        wodexioabaobei<br>"
+        document.write("<br>" + str);
+        document.write("<br>" + str2);
+        // document.write(str2.length);
+        // document.write(str2.charAt(0));
+        var str3 = str.concat(str2, str2);
+        str3 = str + str2;
+        // str3 = str.substring(0, 5);
+        // str3 = str2.substring(1);
+        // str3 = str.substr(-2, str.length - 5);
+        // str3 = str.indexOf("ma");
+        // str3 = str.trim();
+        // str3 = str.split("a", 2);
+        document.write("<br>" + str3);
+        // var i = 0;
+        // for (i = 0; i < 100; i++) {
+        //     document.write(i+"<br>");
+        // }
+        // alert("我操你们的吗");
+        // document.write("你好，网页的访问者");
+
+        var arr = [1, 'nima', true];
+        document.write("<br>" + Array.isArray(arr));
+        // document.write("<br>" + arr);
+        // for (i = 0; i < arr.length; i++) {
+        //     document.write("<br>" + arr[i]);
+        // }
+        // for (var i in arr) {
+        //     document.write("<br>"+arr[i]);
+        // }
+        var lenth = arr.push("你好呀");
+        arr.pop();
+        arr.shift();
+        arr.unshift(99, 23, '我是尼玛');
+        document.write("<br>" + arr);
+
+
+
+
+    </script>
+
+    <script>
+        var btn=document.getElementById("1234");
+        btn.document.createAttribute("onclick").onclik="clik()";
+        function clik(){
+            alert("禁止点击");
+        }
+        var d=document.createElement('img');
+        var id=document.createAttribute('scr')
+        // id.value="";
+        var mat='123456';
+        document.write(mat);
+        var con=document.createComment('shit');
+        d.setAttributeNode(id);
+        document.write(d);
+    </script>
+</body>
+
+</html>
